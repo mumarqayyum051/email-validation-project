@@ -1,0 +1,65 @@
+/* styling for "Confirm EMail" text */
+.heading {
+  font-size: 24px;
+  line-height: 28.8px;
+  font-weight: 350;
+  margin-left: 32px;
+  color: #333840;
+}
+/* styling for OTP container */
+.otp-box-container {
+  margin-left: 32px;
+}
+
+/* font styling of text written under "Confirm email"  */
+.email-sent-text {
+  margin: 0 0 10px 32px;
+  word-wrap: break-word;
+  width: 320px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #58606e;
+}
+input[type="text"] {
+  border: 1px solid grey !important;
+}
+/* common styling for button container */
+.button-container {
+  float: right;
+  margin-top: 4%;
+  margin-right: 6%;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+/* common styling for both buttons */
+.btn {
+  cursor: pointer;
+  padding: 8px 12px;
+  font-family: Gotham;
+  font-weight: 350;
+  font-size: 16px;
+  border-radius: 4px;
+}
+/* styling for confirm button */
+.confirm {
+  background-color: #0a3bb7;
+  border: none;
+  color: white;
+}
+
+/* styling for resend button */
+.resend {
+  background: none;
+  color: #0a3bb7;
+  border: 1px solid grey;
+}
+
+/* this class adds a grey effects that show as if the button is disabled */
+.disabled {
+  background-color: #0a3bb74a !important;
+  cursor: not-allowed;
+}

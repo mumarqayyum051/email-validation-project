@@ -1,0 +1,27 @@
+<div class="basic-info-container">
+  <h1 class="heading">Create your account</h1>
+  <form class="inputs-group" [formGroup]="form">
+    <div class="name">
+      <label for="name" class="label">Name</label>
+      <input type="text" formControlName="name" />
+    </div>
+    <div class="email">
+      <label for="email" class="label">Email</label>
+      <input type="email" formControlName="email" [email]="true" />
+    </div>
+    <div class="password">
+      <label for="password" class="label">Password</label>
+      <input type="password" formControlName="password" />
+    </div>
+  </form>
+  <div class="submit">
+    <button
+      class="submit-btn"
+      (click)="onSubmit()"
+      [disabled]="this.form.invalid"
+      [class.disabled]="this.form.invalid"
+    >
+      <span class="submit-btn-text">Create account</span>
+    </button>
+  </div>
+</div>

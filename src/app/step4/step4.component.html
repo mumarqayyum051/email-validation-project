@@ -1,0 +1,35 @@
+<div class="basic-info-container">
+  <h1 class="heading">Invite your friends</h1>
+  <div class="inputs-group">
+    <div class="email" *ngFor="let input of inputsArray; let i = index">
+      <label for="email" class="label">{{ input.label }}</label>
+      <input
+        type="input.type"
+        (input)="writeEmail($event, i); checkValidation()"
+      />
+    </div>
+  </div>
+  <div class="button-container">
+    <div class="button-wrapper">
+      <button
+        class="btn add"
+        (click)="
+          this.inputsArray.push({ label: 'Email', type: 'email', email: '' })
+        "
+      >
+        <i class="fas fa-user-plus"></i>
+      </button>
+      <button class="btn skip">
+        <a href="https://www.google.com" target="_blank">Skip</a>
+      </button>
+      <button
+        class="btn send"
+        (click)="sendInvites()"
+        [disabled]="!isAllowedToInvites"
+        [class.disabled]="!isAllowedToInvites"
+      >
+        Send Invites
+      </button>
+    </div>
+  </div>
+</div>

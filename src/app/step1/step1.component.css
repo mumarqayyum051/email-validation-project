@@ -1,0 +1,115 @@
+/* parent container */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+/* header styling */
+.stepper {
+  width: 104px;
+  height: 11px;
+}
+/* header btns styling */
+.stepper span {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 11px;
+}
+/* header btns styling when hover on header buttons */
+
+.stepper span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* styling for the step user is currently on  */
+.active {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 11px;
+
+  color: #333840;
+}
+/* parent container of each component */
+.basic-info-container {
+  background-color: rgb(255, 255, 255);
+  border: 0 solid rgb(255, 255, 255);
+  /* height: 410px; */
+  width: 384px;
+  border-radius: 8px;
+}
+
+/* adds a grey effect for disabled button */
+.disabled {
+  background-color: #0a3bb74a !important;
+  cursor: not-allowed;
+}
+/* styling for heading */
+.heading {
+  font-size: 24px;
+  line-height: 28.8px;
+  font-weight: 350;
+  /* margin-left: 32px; */
+  margin: 0px 0 0 32px;
+  color: #333840;
+}
+/* styling for inputs  group*/
+.inputs-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 32px;
+  margin-right: 32px;
+  height: 230px;
+  justify-content: space-between;
+}
+/* styling for input labels */
+label {
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: #58606e;
+  margin-bottom: 1px;
+}
+/* styling for input  */
+
+input {
+  height: 46px;
+  width: 320px;
+  padding: 12px 16px;
+  background: #ffffff;
+  border: 1px solid #c8d1e0;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+/* styling for submit button */
+.submit {
+  display: flex;
+  flex-direction: column;
+  margin-left: 32px;
+  margin-right: 32px;
+  width: 320px;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+/* styling for submit button */
+
+.submit-btn {
+  width: 146px;
+  height: 36px;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  background: #0a3bb7;
+}
+/* styling for submit button  tetx*/
+
+.submit-btn-text {
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+}

@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="basic-info">
+    <div class="sub-container">
+      <div class="stepper">
+        <button
+          class="step1"
+          [routerLink]="['/1']"
+          routerLinkActive="router-link-active"
+        >
+          01
+        </button>
+        <span style="margin: 0 5px">></span>
+
+        <button
+          class="step2"
+          [routerLink]="['/2']"
+          routerLinkActive="router-link-active"
+        >
+          02
+        </button>
+        <span style="margin: 0 5px">></span>
+
+        <button
+          class="step3"
+          [routerLink]="['/3']"
+          routerLinkActive="router-link-active"
+        >
+          03
+        </button>
+        <span style="margin: 0 5px">></span>
+        <button
+          class="step4"
+          [routerLink]="['/4']"
+          routerLinkActive="router-link-active"
+        >
+          04
+        </button>
+      </div>
+      <!-- this line enables other component to route here -->
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

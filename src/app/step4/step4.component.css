@@ -1,0 +1,96 @@
+.basic-info-container {
+  background-color: rgb(255, 255, 255);
+  border: 0 solid rgb(255, 255, 255);
+  /* height: 410px; */
+  width: 384px;
+  border-radius: 8px;
+}
+/* styling for "Invites" text */
+
+.heading {
+  font-size: 24px;
+  line-height: 28.8px;
+  font-weight: 350;
+  /* margin-left: 32px; */
+  margin: 0px 0 0 32px;
+  color: #333840;
+}
+/* styling for inputs gorup */
+
+.inputs-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 32px;
+  margin-right: 32px;
+  height: max-content;
+  justify-content: space-between;
+}
+/* styling for input label*/
+
+label {
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: #58606e;
+  margin-bottom: 1px;
+}
+/* styling for input  */
+
+input {
+  height: 46px;
+  width: 320px;
+  padding: 12px 16px;
+  background: #ffffff;
+  border: 1px solid #c8d1e0;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+/* styling for buttons gorup */
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 92%;
+  margin-top: 2%;
+}
+/* styling for buttons gorup */
+.button-wrapper {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+}
+/* styling for al the buttons on step 4 */
+.btn {
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-weight: 350;
+  font-size: 16px;
+  font-family: Gotham;
+}
+/* styling for send button */
+.send {
+  background-color: #0a3bb7;
+  border: none;
+  color: white;
+}
+/* common styling for skip and add button */
+.skip,
+.add {
+  background: none;
+  border: 1px solid grey;
+  color: #0a3bb7;
+}
+/* styling for anchor tags */
+a,
+a:focus {
+  text-decoration: none;
+  color: #0a3bb7;
+}
+/* styling for disabled button */
+.disabled {
+  background-color: #0a3bb74a !important;
+  cursor: not-allowed;
+}

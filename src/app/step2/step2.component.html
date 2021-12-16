@@ -1,0 +1,25 @@
+<div>
+  <h1 class="heading">Confirm your email</h1>
+  <div class="email-sent-text">
+    We sent a code to ”{{ email }}”, please type it below. If this is not your
+    email, you can change it here.
+  </div>
+  <div class="otp-box-container">
+    <ngx-otp-input
+      [config]="otpInputConfig"
+      class="otp-boxes"
+      (fill)="enableBtn($event)"
+    ></ngx-otp-input>
+  </div>
+  <div class="button-container">
+    <button class="btn resend" (click)="onResendClicked()">Resend Code</button>
+    <button
+      class="btn confirm"
+      [disabled]="isFilled"
+      [class.disabled]="isFilled"
+      (click)="onConfirmClicked()"
+    >
+      Confirm
+    </button>
+  </div>
+</div>
